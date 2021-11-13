@@ -1,0 +1,84 @@
+self.student_button_img=PhotoImage(file='images/register_button_inactive.png')
+self.student_button=Button(root,image=self.student_button_img)
+self.Student_button_window=self.backgrnd_canvas.create_window(0,0,anchor=NW,window=self.student_button)
+
+
+
+
+self.student_button_img=PhotoImage(file='images/register_button_inactive.png')
+self.button=Button(self.root,image=self.student_button_img,anchor=NW)
+self.button_window=self.backgrnd_canvas.create_window(0,0,anchor=NW,window=self.button)
+
+
+
+self.student_button_inactive=self.backgrnd_canvas.create_image(0,0,anchor=NW,image=self.student_button_img_inactive)
+self.student_button_active=self.backgrnd_canvas.create_image(100,0,anchor=NW,image=self.student_button_img_active)
+self.backgrnd_canvas.tag_bind(self.student_button_img_active,"<Button-1>",register_student)
+
+
+
+# self.backgrnd_canvas = Canvas(self.root, width=800, height=600)
+        # self.backgrnd_canvas.pack(fill=BOTH, expand=YES)
+        # self.bg = PhotoImage(file='images/first_window_background.png')
+        # self.backgrnd_canvas.create_image(0, 0, image=self.bg, anchor=NW)
+
+
+
+# self.backgrnd_canvas.create_text(400, 100, text="Face Recognition Attendence System", font=("Helvatica", 30), fill="white")
+
+
+# def register_student():
+        #     self.backgrnd_canvas.create_text(130, 280, text="REGISTRATION STARTED", font=("Helvatica", 20), fill="white")
+        # self.student_logo =PhotoImage(file='images/srtudent_logo.png')#! logo of the student
+        # self.backgrnd_canvas.create_image(60, -30, image=self.student_logo, anchor=NW)#! logo of the student
+        # self.backgrnd_canvas.create_text(130, 280, text="Are You a Student?", font=("Helvatica", 20), fill="white")#! text of the student
+        # self.student_button_img_inactive=PhotoImage(file=r'images\button_off.png')
+        # self.student_button_img_active=PhotoImage(file=r'images\button_on.png')
+        # self.button=Button(self.backgrnd_canvas,text="click here!")
+
+
+# self.teacher_logo =PhotoImage(file='images/teacher_logo.png')#! logo of the teacher
+        # self.backgrnd_canvas.create_image(-60, -40, image=self.teacher_logo, anchor=NW)#! logo of the teacher
+        # self.backgrnd_canvas.create_text(665, 280, text="Are You a Teacher?", font=("Helvatica", 20), fill="white")#! text of the teacher
+
+
+
+canvas = Canvas(root, width = 300, height = 300)  
+        canvas.place(x=100,y=100)  
+        img = ImageTk.PhotoImage(Image.open(r"images\main_logo.png"))  
+        canvas.create_image(20, 20, anchor=NW, image=img) 
+
+
+# self.btn_inactive=ImageTk.PhotoImage(Image.open(r"images\button_off.png"))
+        # self.btn_active=ImageTk.PhotoImage(Image.open(r"images\button_on.png"))
+        
+        # #! Teacher BUTTON FUNCTIONS:---------------------------
+        # def on_enter(event):
+        #     self.teacher_button.config(image=self.btn_active)
+        # def on_leave(event):
+        #     self.teacher_button.config(image=self.btn_inactive)
+        # def text():
+        #     text = Label(self.root, text="button pressed",
+        #              bg="#1b1b1b", fg="white", font=("cream Demo", 18))
+        #     text.place(x=360,y=360)
+        # #! Teacher BUTTON FUNCTIONS:---------------------------
+
+        # self.teacher_button=Button(self.root,image=self.btn_inactive,bg="#1b1b1b",bd=0,activebackground="#1b1b1b",command=text)
+        # self.teacher_button.place(x=370,y=380)
+        # self.teacher_button.bind("<Enter>",on_enter)
+        # self.teacher_button.bind("<Leave>",on_leave)
+
+# stu_root=Tk()
+# stu_root.title("Student Registration Window")
+# stu_root.iconbitmap(r'images\icon.ico')
+# stu_root.geometry("800x600+360+100")
+# stu_root.resizable(False, False)
+# stu_root.configure(bg='#1b1b1b')
+# stu_img = ImageTk.PhotoImage(Image.open(r"images\student_reg_pic.png"))
+# stu_img_label = Label(stu_root,image=stu_img, bg="#1b1b1b")
+# stu_img_label.place(x=0,y=0)
+# stu_text = Label(stu_root, text="REGISTRATION",
+#                           bg="#1b1b1b", fg="white", font=("Good Timing Rg", 28))
+# stu_text.place(x=390, y=30)
+
+stu_root.mainloop()
